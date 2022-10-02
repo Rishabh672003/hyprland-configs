@@ -8,7 +8,7 @@
 }
 
 window#waybar {
-  background: #15121B;
+  background: #15121b;
   color: #cdd6f4;
 }
 
@@ -48,7 +48,18 @@ tooltip {
   border-radius: 10px;
 }
 
-#custom-language, #custom-updates, #custom-caffeine, #clock, #battery, #pulseaudio, #network, #workspaces, #tray, #backlight {
+#custom-language,
+#custom-updates,
+#custom-caffeine,
+#clock,
+#battery,
+#pulseaudio,
+#cpu,
+#memory,
+#network,
+#workspaces,
+#tray,
+#backlight {
   background: #1e1e2e;
   padding: 0px 10px;
   margin: 3px 0px;
@@ -81,6 +92,13 @@ tooltip {
   color: #f5c2e7;
 }
 
+#cpu {
+  background: #1e1e2e;
+  padding: 0px 10px;
+  margin: 3px 0px;
+  color: #f5c2e7;
+}
+
 #clock {
   color: #f9e2af;
   border-radius: 10px;
@@ -94,12 +112,16 @@ tooltip {
   color: #89b4fa;
 }
 
-#battery{
-  color:  #a6e3a1;
+#memory {
+  color: #74C7EC;
+}
+
+#battery {
+  color: #a6e3a1;
   border-radius: 0 10px 10px 0;
   margin-right: 5px;
 }
 
-#backlight{
+#backlight {
   color: #cba6f7;
 }
