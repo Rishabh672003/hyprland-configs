@@ -1,11 +1,20 @@
 {
   "layer": "top",
-  "position": "top", 
-  "height": 25,
-  
-  "modules-left":   ["wlr/workspaces"],
+  "position": "top",
+  "height": 36,
+
+  "modules-left": ["wlr/workspaces"],
   "modules-center": ["clock"],
-  "modules-right":  ["tray", "custom/caffeine", "custom/updates" ,"custom/language", "network", "backlight", "pulseaudio","battery"],
+  "modules-right": [
+    "tray",
+    "custom/caffeine",
+    "custom/updates",
+    "custom/language",
+    "network",
+    "backlight",
+    "pulseaudio",
+    "battery"
+  ],
 
   "wlr/workspaces": {
     "disable-scroll": true,
@@ -23,7 +32,7 @@
       "8": [],
       "9": [],
       "10": []
-    },
+    }
     /*"format-icons": {
       "1": "",
       "2": "",
@@ -60,13 +69,13 @@
     "icon-size": 13,
     "spacing": 10
   },
-  "backlight":{
+  "backlight": {
     "device": "intel_backlight",
     "format": "{icon} {percent}%",
-    "format-icons": ["","",""],
+    "format-icons": ["", "", ""],
     "on-scroll-up": "brightnessctl set 1%+",
     "on-scroll-down": "brightnessctl set 1%-",
-    "min-length": 6 
+    "min-length": 6
   },
   "battery": {
     "states": {
@@ -81,7 +90,7 @@
     "format-icons": ["", "", "", "", "", "", "", "", "", "", ""]
   },
   "clock": {
-   "format": "{: %R   %d/%m}",
+    "format": "{: %R   %d/%m}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
   "network": {
