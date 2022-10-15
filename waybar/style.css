@@ -3,7 +3,7 @@
   border-radius: 0;
   font-family: JetBrainsMono Nerd Font;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 17px;
   min-height: 0;
 }
 
@@ -22,16 +22,21 @@ tooltip {
 
 #workspaces button {
   padding: 5px;
-  color: #313244;
+  color: #45475A;
   margin-right: 5px;
+  font-size: 18
 }
 
 #workspaces button.active {
-  color: #a6adc8;
+  /* color: #a6adc8; */
+  /* color: #ffffff */
+  color: #CDD6F4;
 }
 
 #workspaces button.focused {
-  color: #a6adc8;
+  /* color: #a6adc9; */
+  /* color: #45475A; */
+  color:#585B70;
   background: #eba0ac;
   border-radius: 10px;
 }
@@ -48,6 +53,13 @@ tooltip {
   border-radius: 10px;
 }
 
+#custom-launcher {
+  /* background: #1e1e2e; */
+  background: #11111B;
+  padding-right: 5px;
+  margin-right: 3px;
+  font-size: 18px;
+}
 #custom-language,
 #custom-updates,
 #custom-caffeine,
@@ -95,7 +107,7 @@ tooltip {
 #cpu {
   background: #1e1e2e;
   padding: 0px 10px;
-  margin: 3px 0px;
+  margin: 5px 0px;
   color: #f5c2e7;
 }
 
@@ -113,7 +125,7 @@ tooltip {
 }
 
 #memory {
-  color: #74C7EC;
+  color: #74c7ec;
 }
 
 #battery {

@@ -3,26 +3,32 @@
   "position": "top",
   "height": 36,
 
-  "modules-left": ["wlr/workspaces"],
+  "modules-left": ["custom/launcher", "wlr/workspaces"],
   "modules-center": ["clock"],
   "modules-right": [
     "tray",
     "custom/caffeine",
     "custom/updates",
-    // "custom/language",
     "network",
-    "backlight",
-    "cpu",
     "memory",
+    "cpu",
+    "backlight",
     "pulseaudio",
     "battery"
   ],
 
+  "custom/launcher": {
+    // "format": "<span color='#bf616a'> </span>",
+    "format": "<span color='#F38BA8'> </span>",
+    "on-click": "wofi --show drun --insensitive --allow-images"
+    // "on-click": "rofi -show drun"
+  },
+
   "wlr/workspaces": {
-    "disable-scroll": true,
+    "disable-scroll": false,
     "all-outputs": true,
     "on-click": "activate",
-    //"format": "{icon}",
+    "format": "{icon}",
     "persistent_workspaces": {
       "1": [],
       "2": [],
@@ -35,20 +41,28 @@
       "9": [],
       "10": []
     }
-    /*"format-icons": {
-      "1": "",
-      "2": "",
-      "3": "",
-      "4": "",
-      "5": "",
-      "6": "",
-      "7": "",
-      "8": "",
-      "9": "",
-      "10": "",
-      "default": "",
-      "active": ""
-    }*/
+    // "format-icons": {
+    //   "1": "",
+    //   "2": "",
+    //   "3": "ﭮ",
+    //   "4": "",
+    //   "5": "",
+    //   "6": "",
+    //   "7": "7.",
+    //   "8": "8.",
+    //   "9": "9.",
+    //   "10": "10.",
+    //   // "default": "",
+    //   // "active": ""
+    // }
+  },
+  "custom/waybar-media": {
+    "return-type": "json",
+    "exec": "waybar-media.py status",
+    "on-click": "waybar-media.py playpause",
+    "on-scroll-up": "waybar-media.py previous",
+    "on-scroll-down": "waybar-media.py next",
+    "escape": true
   },
   "custom/caffeine": {
     "exec": "~/.config/waybar/scripts/caffeine.sh",
@@ -59,16 +73,12 @@
   },
   "custom/updates": {
     "exec": "(checkupdates ; paru -Qua) | wc -l",
-    "interval": 18000,
-    "format": " {}"
+    "interval": 12000,
+    "format": " {}",
+    "on-click": "wezterm start yay -Syu --noconfirm --devel"
   },
-  // "custom/language": {
-  //   "exec": "cat /tmp/kb_layout",
-  //   "interval": 3,
-  //   "format": " {}"
-  // },
   "tray": {
-    "icon-size": 13,
+    "icon-size": 15,
     "spacing": 10
   },
   "backlight": {
@@ -81,7 +91,7 @@
   },
   "battery": {
     "states": {
-      "good": 95,
+      "good": 80,
       "warning": 30,
       "critical": 20
     },
@@ -89,7 +99,19 @@
     "format-charging": " {capacity}%",
     "format-plugged": " {capacity}%",
     "format-alt": "{time} {icon}",
-    "format-icons": ["", "", "", "", "", "", "", "", "", "", ""]
+    "format-icons": [
+      "CHARGE-NOW ",
+      "Charge-immediately ",
+      "Charge-quickly ",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
   },
   "clock": {
     "format": "{: %R   %d/%m}",
@@ -101,24 +123,23 @@
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "睊 Disconnected",
     "tooltip-format-wifi": "Signal Strenght: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
-    "on-click": "wofi-wifi-menu"
+    // "on-click": "wofi-wifi-menu",
+    "on-click": "alacritty -e nmtui"
   },
   "cpu": {
     "interval": 10,
     "format": " {}%",
     "max-length": 10
   },
-
   "memory": {
     "interval": 30,
     "format": " {used:0.1f}G/{total:0.1f}G",
     "max-length": 15
   },
-
   "pulseaudio": {
     "format": "{icon} {volume}%",
     "format-muted": "ﱝ Muted",
-    "on-click": "/home/amitgold/.config/hypr/scripts/volume_ctl.sh mute",
+    "on-click": "~/.config/hypr/scripts/volume_ctl.sh",
     "scroll-step": 1,
     "format-icons": {
       "headphone": "",
