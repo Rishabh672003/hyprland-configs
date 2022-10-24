@@ -21,4 +21,4 @@ swaylock \
     --inside-wrong-color f38ba8 \
     --inside-clear-color a6e3a1 \
     --indicator-caps-lock \
-    --image ~/projects/hyprland-configs/wallpapers/girl-getting-out-of-the-train-3-3840×2160.jpg
+    --image ~/.config/hypr/wallpapers/girl-getting-out-of-the-train-3-3840×2160.jpg
