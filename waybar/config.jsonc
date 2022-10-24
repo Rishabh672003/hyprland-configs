@@ -1,13 +1,14 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 36,
+  "height": 38,
 
   "modules-left": ["custom/launcher", "wlr/workspaces"],
   "modules-center": ["clock"],
   "modules-right": [
     "tray",
     "custom/caffeine",
+    "inhibitor",
     "custom/updates",
     "network",
     "memory",
@@ -56,6 +57,14 @@
     //   // "active": ""
     // }
   },
+  "inhibitor": {
+    "what": "idle",
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
+    }
+  },
   "custom/waybar-media": {
     "return-type": "json",
     "exec": "waybar-media.py status",
@@ -100,7 +109,7 @@
     "format-plugged": " {capacity}%",
     "format-alt": "{time} {icon}",
     "format-icons": [
-      "CHARGE-NOW ",
+      "CHARGE-IMMEDIATELY-NOW ",
       "Charge-immediately ",
       "Charge-quickly ",
       "",
@@ -121,7 +130,7 @@
     "format-wifi": "直 {essid}",
     "format-ethernet": " {essid}",
     "format-linked": "{ifname} (No IP) ",
-    "format-disconnected": "睊 Disconnected",
+    "format-disconnected": "睊 Disc.",
     "tooltip-format-wifi": "Signal Strenght: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
     // "on-click": "wofi-wifi-menu",
     "on-click": "alacritty -e nmtui"

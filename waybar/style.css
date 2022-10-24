@@ -22,21 +22,16 @@ tooltip {
 
 #workspaces button {
   padding: 5px;
-  color: #45475A;
+  color: #45475a;
   margin-right: 5px;
-  font-size: 18
 }
 
 #workspaces button.active {
-  /* color: #a6adc8; */
-  /* color: #ffffff */
-  color: #CDD6F4;
+  color: #cdd6f4;
 }
 
 #workspaces button.focused {
-  /* color: #a6adc9; */
-  /* color: #45475A; */
-  color:#585B70;
+  color: #cdd6f4;
   background: #eba0ac;
   border-radius: 10px;
 }
@@ -54,11 +49,7 @@ tooltip {
 }
 
 #custom-launcher {
-  /* background: #1e1e2e; */
-  background: #11111B;
   padding-right: 5px;
-  margin-right: 3px;
-  font-size: 18px;
 }
 #custom-language,
 #custom-updates,
@@ -96,6 +87,14 @@ tooltip {
   padding-right: 12px;
 }
 
+#inhibitor {
+  background: #1e1e2e;
+  color: #F5E0DC;
+  border-radius: 10px 0px 0px 10px;
+  padding-right: 12px;
+  padding-left: 5px
+}
+
 #custom-language {
   color: #f38ba8;
 }
@@ -107,7 +106,7 @@ tooltip {
 #cpu {
   background: #1e1e2e;
   padding: 0px 10px;
-  margin: 5px 0px;
+  margin: 3px 0px;
   color: #f5c2e7;
 }
 
@@ -125,7 +124,7 @@ tooltip {
 }
 
 #memory {
-  color: #74c7ec;
+  color: #7dc4e4;
 }
 
 #battery {
