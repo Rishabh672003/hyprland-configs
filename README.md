@@ -1,5 +1,5 @@
 # hyprland-configs
-my hyprland configs
+my hyprland configs,
 the wallpaper is in hypr/wallpaper
 
 # showcase
