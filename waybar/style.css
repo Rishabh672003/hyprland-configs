@@ -71,6 +71,7 @@ tooltip {
 #tray {
   border-radius: 10px;
   margin-right: 4px;
+  font-size: 19px; 
 }
 
 #workspaces {
@@ -113,6 +114,7 @@ tooltip {
 #clock {
   color: #f9e2af;
   border-radius: 10px;
+  /* padding-right: 5px */
 }
 
 #network {
@@ -135,4 +137,8 @@ tooltip {
 
 #backlight {
   color: #cba6f7;
+}
+
+#custom-spotify{
+  color: #CDD6F4;
 }

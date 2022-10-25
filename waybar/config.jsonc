@@ -19,8 +19,7 @@
   ],
 
   "custom/launcher": {
-    // "format": "<span color='#bf616a'> </span>",
-    "format": "<span color='#F38BA8'>  </span>",
+    "format": "<span color='#F38BA8'> </span>",
     "on-click": "wofi --show drun --insensitive --allow-images"
     // "on-click": "rofi -show drun"
   },
@@ -87,7 +86,7 @@
     "on-click": "wezterm start yay -Syu --noconfirm --devel"
   },
   "tray": {
-    "icon-size": 15,
+    "icon-size": 17,
     "spacing": 10
   },
   "backlight": {
@@ -162,8 +161,7 @@
   },
   "custom/spotify": {
     "exec": "$HOME/.config/waybar/scripts/spotify.sh",
-    // "return-type": "json",
-    "max-length": 40,
+    "max-length": 33,
     "format": " {}",
     "on-click": "playerctl play-pause",
     "on-double-click": "playerctl next",
