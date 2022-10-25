@@ -3,7 +3,7 @@
   "position": "top",
   "height": 38,
 
-  "modules-left": ["custom/launcher", "wlr/workspaces"],
+  "modules-left": ["custom/launcher", "wlr/workspaces", "custom/spotify"],
   "modules-center": ["clock"],
   "modules-right": [
     "tray",
@@ -20,7 +20,7 @@
 
   "custom/launcher": {
     // "format": "<span color='#bf616a'> </span>",
-    "format": "<span color='#F38BA8'> </span>",
+    "format": "<span color='#F38BA8'>  </span>",
     "on-click": "wofi --show drun --insensitive --allow-images"
     // "on-click": "rofi -show drun"
   },
@@ -159,5 +159,14 @@
       "car": "",
       "default": ["", "", "墳", ""]
     }
+  },
+  "custom/spotify": {
+    "exec": "$HOME/.config/waybar/scripts/spotify.sh",
+    // "return-type": "json",
+    "max-length": 40,
+    "format": " {}",
+    "on-click": "playerctl play-pause",
+    "on-double-click": "playerctl next",
+    "on-right-click": "on-click-right"
   }
 }
