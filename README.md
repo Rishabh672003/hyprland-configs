@@ -6,4 +6,5 @@ the wallpaper is in [hypr/wallpaper](https://github.com/Rishabh672003/hyprland-c
 ![image](https://user-images.githubusercontent.com/53911515/197456390-2bc76c48-974e-4dbe-a591-7be3fe30eb6d.png)
 ![image](https://user-images.githubusercontent.com/53911515/197456531-413ce0c7-d4c9-4142-bd14-f105b50f809b.png)
 
+# Archive
 this is deprecated, now all my configs are here - https://github.com/Rishabh672003/dotfiles
